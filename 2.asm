@@ -10,8 +10,9 @@ CLEARBANNER EQU 3
 ORG 200H
   PTR_V1: DW VAR1
   PTR_V2: DW VAR2
-  VAR1: DW 100
-  VAR2: DW 200
+
+  VAR1: DW -100   ; Primeira variável a ser comparada
+  VAR2: DW 200    ; Segunda variável a ser comparada
 
 ORG 0H
 MAIN:
@@ -46,7 +47,6 @@ EXIT:
 ORG 50H  
   PTR_LO:DB 0     ; LOW byte do ponteiro de retorno
   PTR_HI:DB 0     ; HIGH byte do ponteiro de retorno
-  PTR_TMP:DW 0    ; Ponteiro temporário
   V1:    DW 0     ; Valor de VAR1
   V2:    DW 0     ; Valor de VAR2
   RETVAL:DB 0     ; Valor de retorno da rotina
