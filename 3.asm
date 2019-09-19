@@ -1,13 +1,9 @@
 ;-------------------------------------------------------;
 ; Programa: Maior valor em vetor                        ;
 ; Autores: Breno Tostes, Matheus Avellar, Pedro Possato ;
-; Data: 2019.09.11                                      ;
+; Data: 2019.09.17                                      ;
 ;-------------------------------------------------------;
 
-; Encontrar o maior valor em um vetor com variáveis
-; de 16 bits com sinal.
-; imprima o maior valor encontrado *em hexadecimal* no "banner"
-               
 BANNER      EQU 2
 CLEARBANNER EQU 3
 
